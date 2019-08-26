@@ -25,6 +25,8 @@
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.1.11",
     "babel-loader": "^8.0.6",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.4",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -39,7 +41,19 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prettier": "prettier --write src/**/*.{js,css}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  }, 
+  "lint-staged": {
+    "linters": {
+      "src/**/*.{js,css}": ["prettier --write", "git add"],
+      "*.md": ["prettier --write", "git add"]
+    }
   },
   "repository": {
     "type": "git",

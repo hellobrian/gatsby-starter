@@ -41,10 +41,17 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 ## 🧐 What's inside?
 
 - CSS Modules
-- Storybook
-- ESLint
 - Husky
 - Lint-staged
+- Storybook
+  - `@storybook/addon-a11y`
+  - `@storybook/addon-knobs`
+  - `@storybook/addon-actions`
+  - `@storybook/addon-links`
+- ESLint
+  - `eslint-config-prettier`
+  - `eslint-plugin-react`
+  - `eslint-plugin-react-hooks`
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 

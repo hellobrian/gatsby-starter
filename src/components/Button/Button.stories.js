@@ -5,7 +5,7 @@ import { action } from "@storybook/addon-actions"
 import { linkTo } from "@storybook/addon-links"
 import { Welcome } from "@storybook/react/demo"
 import { Button } from "./Button"
-import { text, boolean, number } from "@storybook/addon-knobs"
+import { text } from "@storybook/addon-knobs"
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
